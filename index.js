@@ -142,7 +142,7 @@ function seekBackwardsAndFindLdAAddr(insLength, data, addr) {
 
         if (window[0] === ldaaddr[0]) {
 
-            let romAddr = (data[addr - (k - 2)] * 0x100) + data[addr (k - 1)];
+            let romAddr = (data[addr - (k - 2)] * 0x100) + data[addr - (k - 1)];
             console.log('Found ld a, []. ROM location: ' + romAddr);
 
             // Invert the ROM data
